@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ">
+  <uml:Model xmi:id="_1dkFoGOIEeWmm9HcWQMTiA" name="RootElement">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_7V8OQGOIEeWmm9HcWQMTiA">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_1hCQYGOIEeWmm9HcWQMTiA" name="Activity1"/>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_1h1hoGOIEeWmm9HcWQMTiA" name="Activity2"/>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_1iJqsGOIEeWmm9HcWQMTiA" name="Interaction1"/>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_1ib-kGOIEeWmm9HcWQMTiA" name="Interaction2"/>
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_1i8U4GOIEeWmm9HcWQMTiA" name="LoginMachine1">
+      <region xmi:type="uml:Region" xmi:id="_1jE3wGOIEeWmm9HcWQMTiA" name="Region1">
+        <transition xmi:type="uml:Transition" xmi:id="_byaZQGOMEeWmm9HcWQMTiA" source="_2KeuoGOLEeWmm9HcWQMTiA" target="_4czWkGOLEeWmm9HcWQMTiA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_dBMgkGOMEeWmm9HcWQMTiA" source="_4czWkGOLEeWmm9HcWQMTiA" target="_428U4GOLEeWmm9HcWQMTiA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_d4zeAGOMEeWmm9HcWQMTiA" source="_428U4GOLEeWmm9HcWQMTiA" target="_wfW-4GOLEeWmm9HcWQMTiA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_eupg4GOMEeWmm9HcWQMTiA" source="_wfW-4GOLEeWmm9HcWQMTiA" target="_5MuXoGOLEeWmm9HcWQMTiA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_f8nI0GOMEeWmm9HcWQMTiA" source="_5MuXoGOLEeWmm9HcWQMTiA" target="_2KeuoGOLEeWmm9HcWQMTiA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_z6i24GOMEeWmm9HcWQMTiA" source="_xWc-8GOLEeWmm9HcWQMTiA" target="_2KeuoGOLEeWmm9HcWQMTiA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_SUpo4GONEeWmm9HcWQMTiA" source="_wfW-4GOLEeWmm9HcWQMTiA" target="_RazFMGOMEeWmm9HcWQMTiA"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_wfW-4GOLEeWmm9HcWQMTiA" name="Password Verified?" kind="choice"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_xWc-8GOLEeWmm9HcWQMTiA" name="Login"/>
+        <subvertex xmi:type="uml:State" xmi:id="_2KeuoGOLEeWmm9HcWQMTiA" name="System promps for password"/>
+        <subvertex xmi:type="uml:State" xmi:id="_4czWkGOLEeWmm9HcWQMTiA" name="User keys a password"/>
+        <subvertex xmi:type="uml:State" xmi:id="_428U4GOLEeWmm9HcWQMTiA" name="System verifies the password"/>
+        <subvertex xmi:type="uml:State" xmi:id="_5MuXoGOLEeWmm9HcWQMTiA" name="System displays a warning"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_RazFMGOMEeWmm9HcWQMTiA" name="Session Established"/>
+      </region>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_fHvdsGOJEeWmm9HcWQMTiA" name="Package1">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_u4kSIGOJEeWmm9HcWQMTiA" name="Create Account"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_yEHoIGOJEeWmm9HcWQMTiA" name="Delete Account"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_zi23AGOJEeWmm9HcWQMTiA" name="Amend Account Details"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_1sI3sGOJEeWmm9HcWQMTiA" name="Login"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_2z_3oGOJEeWmm9HcWQMTiA" name="Logout"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_-PQIQGOJEeWmm9HcWQMTiA" name="Switch User"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_W-zyQGOKEeWmm9HcWQMTiA" name="UseCase1"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_gx1LgGOKEeWmm9HcWQMTiA" name="UseCase2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_gQKeUGOJEeWmm9HcWQMTiA" name="Main User"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_kn7v0GOJEeWmm9HcWQMTiA" name="Other User"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_rz5AMGOJEeWmm9HcWQMTiA" name="Administrator"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_tRpXoGOJEeWmm9HcWQMTiA" name="Owner"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Ed60gGOLEeWmm9HcWQMTiA" client="_tRpXoGOJEeWmm9HcWQMTiA" supplier="_rz5AMGOJEeWmm9HcWQMTiA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_GVpLIGOLEeWmm9HcWQMTiA" memberEnd="_GVsOcGOLEeWmm9HcWQMTiA _GVs1gGOLEeWmm9HcWQMTiA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GVrAUGOLEeWmm9HcWQMTiA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GVrAUWOLEeWmm9HcWQMTiA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_GVsOcGOLEeWmm9HcWQMTiA" name="logout" type="_2z_3oGOJEeWmm9HcWQMTiA" association="_GVpLIGOLEeWmm9HcWQMTiA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_GVs1gGOLEeWmm9HcWQMTiA" name="login" type="_1sI3sGOJEeWmm9HcWQMTiA" association="_GVpLIGOLEeWmm9HcWQMTiA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TbJhcGOOEeWmm9HcWQMTiA" name="UserAccount">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_BnW6QGOPEeWmm9HcWQMTiA" name="name" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_BxH6QGOPEeWmm9HcWQMTiA" name="userName" visibility="protected">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_By5b4GOPEeWmm9HcWQMTiA" name="LastLogin" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_B6GQEGOPEeWmm9HcWQMTiA" name="age" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_KNIdQGOPEeWmm9HcWQMTiA" name="password" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_AbPLwmOXEeWmm9HcWQMTiA" name="userlookup" type="_upDZAGOVEeWmm9HcWQMTiA" association="_AbOksGOXEeWmm9HcWQMTiA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_cbV6IGOPEeWmm9HcWQMTiA" name="setName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_c6G5wGOPEeWmm9HcWQMTiA" name="setPassword"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_oVYtcGOTEeWmm9HcWQMTiA" name="getUserName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="___ofwGOUEeWmm9HcWQMTiA" name="setUserName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_CEYlwGOVEeWmm9HcWQMTiA" name="getName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_FXDQYGOVEeWmm9HcWQMTiA" name="getPassword"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Um0qYGOOEeWmm9HcWQMTiA" name="Login" isActive="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_HX7qYGOSEeWmm9HcWQMTiA" name="userName" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Vxg_EGOSEeWmm9HcWQMTiA" name="password" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ct_pAGOSEeWmm9HcWQMTiA" name="user" visibility="private" type="_TbJhcGOOEeWmm9HcWQMTiA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_kh_w0GOSEeWmm9HcWQMTiA" name="validate" visibility="private" type="_q0lbIGOQEeWmm9HcWQMTiA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_8q4fkmOWEeWmm9HcWQMTiA" name="userlookup" type="_upDZAGOVEeWmm9HcWQMTiA" association="_8q34gGOWEeWmm9HcWQMTiA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_BhV4MmOXEeWmm9HcWQMTiA" name="validation" type="_q0lbIGOQEeWmm9HcWQMTiA" association="_BhVRIGOXEeWmm9HcWQMTiA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_mZrgoGOREeWmm9HcWQMTiA" name="lookUpUser">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_hVVqwGOWEeWmm9HcWQMTiA" name="userName" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_pIhsgGOREeWmm9HcWQMTiA" name="getPassword"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r0zskGOREeWmm9HcWQMTiA" name="validate" visibility="private">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_DVSe4GOTEeWmm9HcWQMTiA" name="user" visibility="private" type="_TbJhcGOOEeWmm9HcWQMTiA"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOvq4GOTEeWmm9HcWQMTiA" name="password" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_X9vwoGOTEeWmm9HcWQMTiA" name="userName" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_MXNn0GOSEeWmm9HcWQMTiA" name="getUserName"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_q0lbIGOQEeWmm9HcWQMTiA" name="Validation">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_5LSlgGOREeWmm9HcWQMTiA" name="user" visibility="private" type="_TbJhcGOOEeWmm9HcWQMTiA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__R6lgGOREeWmm9HcWQMTiA" name="userName" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_97deAGOTEeWmm9HcWQMTiA" name="password" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_BhV4M2OXEeWmm9HcWQMTiA" name="login" type="_Um0qYGOOEeWmm9HcWQMTiA" association="_BhVRIGOXEeWmm9HcWQMTiA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_gMQVEGOREeWmm9HcWQMTiA" name="verifyUser"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_m5n24GOPEeWmm9HcWQMTiA" name="verifyPassword" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_7E7IAGOOEeWmm9HcWQMTiA" name="verifyUserName" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_upDZAGOVEeWmm9HcWQMTiA" name="Userlookup">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_juXXoGOWEeWmm9HcWQMTiA" name="userName" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_8q5GoGOWEeWmm9HcWQMTiA" name="login" type="_Um0qYGOOEeWmm9HcWQMTiA" association="_8q34gGOWEeWmm9HcWQMTiA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_AbPLwWOXEeWmm9HcWQMTiA" name="useraccount" type="_TbJhcGOOEeWmm9HcWQMTiA" association="_AbOksGOXEeWmm9HcWQMTiA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bAY64GOWEeWmm9HcWQMTiA" name="getUser">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_wQn-UGOWEeWmm9HcWQMTiA" name="userName" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_2mdfAGOWEeWmm9HcWQMTiA" name="User" visibility="private" type="_TbJhcGOOEeWmm9HcWQMTiA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_8q34gGOWEeWmm9HcWQMTiA" memberEnd="_8q4fkmOWEeWmm9HcWQMTiA _8q5GoGOWEeWmm9HcWQMTiA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8q4fkGOWEeWmm9HcWQMTiA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8q4fkWOWEeWmm9HcWQMTiA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_AbOksGOXEeWmm9HcWQMTiA" memberEnd="_AbPLwWOXEeWmm9HcWQMTiA _AbPLwmOXEeWmm9HcWQMTiA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AbOksWOXEeWmm9HcWQMTiA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AbPLwGOXEeWmm9HcWQMTiA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_BhVRIGOXEeWmm9HcWQMTiA" memberEnd="_BhV4MmOXEeWmm9HcWQMTiA _BhV4M2OXEeWmm9HcWQMTiA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BhV4MGOXEeWmm9HcWQMTiA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BhV4MWOXEeWmm9HcWQMTiA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_lrGVoGOMEeWmm9HcWQMTiA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lrG8sGOMEeWmm9HcWQMTiA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <ActionLanguage:TextualRepresentation xmi:id="_lrKAAGOMEeWmm9HcWQMTiA" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_8IIG4GONEeWmm9HcWQMTiA" language="org.eclipse.papyrus.uml.textedit.state.xtext.UmlState"/>
+</xmi:XMI>
