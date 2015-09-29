@@ -19,17 +19,49 @@ public class UserAccount {
 	/**
 	 */
 	protected String userName;
+	/**
+	 */
+	protected int consecutiveLoginAttempts;
 
-	
+	/**
+	 * 
+	 */
 	public UserAccount() {
 
 	}
 	
+	/**
+	 * 
+	 * @param name
+	 * @param password
+	 * @param age
+	 * @param userName
+	 */
 	public UserAccount( String name, String password, int age, String userName) {
 		this.name = name;
 		this.password = password;
 		this.age = age;
 		this.userName = userName;
+	}
+	
+	/**
+	 * 
+	 */
+	public void addConsecutiveLoginAttempts(){
+		consecutiveLoginAttempts++;	
+	}
+	/**
+	 * 
+	 */
+	public void zeroConsecutiveLoginAttempts(){
+		consecutiveLoginAttempts = 0;	
+	}
+	/**
+	 * 
+	 * @return
+	 */
+	public int getAttempts(){
+		return consecutiveLoginAttempts;	
 	}
 	
 	
@@ -47,6 +79,7 @@ public class UserAccount {
 	}
 	/**
 	 * 
+	 * @return
 	 */
 	public String getName() {
 	 	 return name; 
@@ -59,6 +92,7 @@ public class UserAccount {
 	}
 	/**
 	 * 
+	 * @return
 	 */
 	public String getPassword() {
 	 	 return password; 

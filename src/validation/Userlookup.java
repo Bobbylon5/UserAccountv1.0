@@ -3,19 +3,27 @@ package validation;
 
 import user.UserAccount;
 
+/**
+ * 
+ * @author robert.harkess
+ *
+ */
 public class Userlookup {
 	
-	
+	/**
+	 * 
+	 */
 	public static final UserAccount[] people = new UserAccount[10];
 
 	/**
 	 */
 	public UserAccount userAccount;
+
+
+
 	/**
+	 * 
 	 */
-	private String userName;
-
-
 	static {
 		
 		UserAccount user = new UserAccount();
@@ -28,19 +36,16 @@ public class Userlookup {
 		
 		UserAccount user1 = new UserAccount( "Billy", "password", 32, "userName");
 		people[1] = user1;
-		
-		people[2].setLastLogin(111113);
-		people[2].setAge(22);
-		people[2].setName("Benji");
-		people[2].setUserName("userName");
-		people[2].setPassword("password");
+		UserAccount user2 = new UserAccount( "Benji", "password", 22, "userName");
+		people[2] = user2;
 	}
 	
 	
 	/**
 	 * Getter of userAccount
+	 * @throws UserNotFoundException 
 	 */
-	public static UserAccount getUseraccount(String user) {
+	public static UserAccount getUseraccount(String user) throws UserNotFoundException {
 		UserAccount userAcc = getUser(user);
 	 	return userAcc; 
 	}
@@ -51,15 +56,16 @@ public class Userlookup {
 	 * 
 	 * @param userName 
 	 * @return 
+	 * @throws UserNotFoundException 
 	 */
-	private static UserAccount getUser(String userName) { 
+	private static UserAccount getUser(String userName) throws UserNotFoundException { 
 		// 
 		for ( UserAccount user : people){
 			if (user != null && user.getName().equals(userName)){
 				return user;
 			}
 		}
-		return null;
+		throw new UserNotFoundException(userName);
 	 }
 
 }
