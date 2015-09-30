@@ -3,6 +3,7 @@
  */
 package validation;
 
+import static org.mockito.Mockito.*;
 import static org.junit.Assert.*;
 
 import org.junit.After;
@@ -12,6 +13,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import user.UserAccount;
+import user.UserDatabase;
+import user.UserDatabaseInterface;
 
 /**
  * @author robert.harkess
@@ -19,13 +22,21 @@ import user.UserAccount;
  */
 public class ValidationTest {
 
+	
 	/**
+	 *  A class variable
+	 */
+	private Validation manager;
+	/**
+	 *  A class variable
 	 */
 	private UserAccount user;
 	/**
+	 * A class variable
 	 */
 	private String password;
 	/**
+	 * A class variable
 	 */
 	private String userName;
 	
@@ -39,6 +50,8 @@ public class ValidationTest {
 		password = "password";
 		userName = "userName";
 		user = new UserAccount();
+		manager = new Validation();
+		UserDatabaseInterface mockUserDatabaseInterface = mock(UserDatabase.class);
 	}
 
 	/**

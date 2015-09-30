@@ -1,11 +1,11 @@
 package login;
 
+import user.UserNotFoundException;
 /**
  * Two exception imports
  * One validation import from validation package
  */
 import validation.IncorrectPasswordException;
-import validation.UserNotFoundException;
 import validation.Validation;
 
 /**

@@ -1,10 +1,10 @@
 package login;
 
+import user.UserNotFoundException;
 /**
  * Two exception imports *
  */
 import validation.IncorrectPasswordException;
-import validation.UserNotFoundException;
 
 /**
  * The Interface class called UserInterface
